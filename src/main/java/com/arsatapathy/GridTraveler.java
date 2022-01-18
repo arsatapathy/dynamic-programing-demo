@@ -15,7 +15,7 @@ public class GridTraveler {
     public static long gridTraveler(long row, long column, Map<String, Long> memo) {
 
         if (row == 1 && column == 1) return 1;
-        if (row == 0 || column == 1) return 0;
+        if (row == 0 || column == 0) return 0;
 
         String key = row + "," + column;
 
@@ -24,9 +24,9 @@ public class GridTraveler {
         long value = gridTraveler(row, column -1, memo) + gridTraveler(row -1, column, memo);
 
         memo.put(key, value);
+        memo.put(column + "," + row, value);
 
         return value;
     }
-
 
 }

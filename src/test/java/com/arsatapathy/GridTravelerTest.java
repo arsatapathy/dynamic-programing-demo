@@ -19,7 +19,7 @@ public class GridTravelerTest {
 
     @Test
     public void test_03() {
-        Assertions.assertEquals(8308281242850L, GridTraveler.gridTraveler(50, 15, new HashMap<>()));
+        Assertions.assertEquals(37387265592825L, GridTraveler.gridTraveler(50, 15, new HashMap<>()));
     }
 
 
