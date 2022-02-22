@@ -14,7 +14,7 @@ public class GridTravelerTest {
 
     @Test
     public void test_02() {
-        Assertions.assertEquals(15, GridTraveler.gridTraveler(5, 4));
+        Assertions.assertEquals(35, GridTraveler.gridTraveler(5, 4));
     }
 
     @Test
